@@ -14,9 +14,9 @@ FROM python:3.12-slim
 
 ENV APP_ENV=production
 ENV APP_PORT=8001
-ENV GROUP_NAME="Grupo 1"
-ENV GROUP_MEMBERS="Marcela Baldeón, César Jácome"
-ENV COURSE_NAME="Curso de Profesionalización en DevOps "
+ENV GROUP_NAME="Grupo no definido"
+ENV GROUP_MEMBERS="Integrantes no definidos"
+ENV COURSE_NAME="Curso de Profesionalización en DevOps"
 ENV PYTHONDONTWRITEBYTECODE=1
 ENV PYTHONUNBUFFERED=1
 
