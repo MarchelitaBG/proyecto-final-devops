@@ -13,7 +13,7 @@ RUN pip install \
 FROM python:3.12-slim
 
 ENV APP_ENV=production
-ENV APP_PORT=8000
+ENV APP_PORT=8001
 ENV GROUP_NAME="Grupo no definido"
 ENV GROUP_MEMBERS="Integrantes no definidos"
 ENV COURSE_NAME="Curso de Profesionalización en DevOps"
@@ -34,7 +34,7 @@ RUN chown -R appuser:appuser /app
 
 USER appuser
 
-EXPOSE 8000
+EXPOSE 8001
 
 HEALTHCHECK --interval=30s --timeout=5s --retries=3 --start-period=10s \
     CMD python -c "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')"
